@@ -132,7 +132,7 @@ O(nm) + O(n), simplified as n
 
 #### O(1) (constant time)
 
-To say an algorithm takes constant (or `O(1)`) time means: no matter how big the input(s) are, the computer will do basically same amount of work to perform the algorithm on them.
+To say an algorithm takes constant (or `O(1)`) time means: no matter how big the input(s) are, the computer will do basically the same amount of work to perform the algorithm on them.
 
 We'll consider most mathematical operations to be `O(1)`: `+`, `-`, `*`, `/`, `%`, `<`, `>`. `==`, `===`.  (This assumes that the numbers are all with some limited size like 32-bit numbers or 64-bit numbers.)
 
