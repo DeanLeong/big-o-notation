@@ -101,23 +101,24 @@ const sum = (a, b) => {
 O(1), because it always has the same (constant) runtime.
 </details>
 
-Let's log all the items in a nested array, and then log the index of each sub-array.
+Let's determine whether something is included in an array.
 
 ```javascript
-const logNestedArray = nestedArray => {
-  for (let n = 0; n < nestedArray.length; n++) {
-    for (let m = 0; m < nestedArray[n].length; m++) {
-      console.log(array[n][m]);
+
+const isInArray = (array, target) =>{
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (element === target){
+      return true;
     }
   }
-  for (let n = 0; n < nestedArray.length; n++) {
-    console.log(`${nestedArray[n]} is at index ${n}`);
-  }
+  return false;
 }
 ```
 <details>
   <summary>What's the Big O?:</summary>
-O(nm) + O(n), simplified as n
+O(n) - in the worst case, we have to iterate through all of the elements of the array to determine whether out target was included.
+  Note that there is a "happy" case where we have to do less work; if, say, the first element in the array was the one we were looking for, we can stop searching. But in Big O analysis, we only care about the *worst case scenario*. 
 </details>
 
 ### Orders of Magnitude: Turn and Talk!
@@ -334,3 +335,4 @@ const isPrime = num => {
   return true;
 }
 ```
+
