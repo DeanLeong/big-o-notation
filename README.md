@@ -246,7 +246,7 @@ const wordOccurrence = (word, phrase) => {
 #### #2
 
 ```javascript
-const bubble_sort = list => {
+const bubbleSort = list => {
   for (let i = 0; i < list.length - 1; i++) {
     for (let j  = 0; j < list.length - 2; j++) {
       if (list[j+1] < list[j]) {
