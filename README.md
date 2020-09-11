@@ -121,17 +121,9 @@ O(n) - in the worst case, we have to iterate through all of the elements of the 
   Note that there is a "happy" case where we have to do less work; if, say, the first element in the array was the one we were looking for, we can stop searching. But in Big O analysis, we only care about the *worst case scenario*. 
 </details>
 
-### Orders of Magnitude: Turn and Talk!
-- Work with the person next to you and find the most significant magnitude for each:
-  1. 5n^3
-  2. 5n^2 + 2n + 10
-  3. 1000n
-  4. 2n + 2
-  5. 10n^3 + 2n^2 + n + 125
-  6. 1 
-  7. 10,000
+### Big O Complexities 
 
-#### O(1) (constant time)
+#### O(1) ("constant" time)
 
 To say an algorithm takes constant (or `O(1)`) time means: no matter how big the input(s) are, the computer will do basically the same amount of work to perform the algorithm on them.
 
